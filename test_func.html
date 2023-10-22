@@ -1,0 +1,11 @@
+<script src="func.js"></script>
+<script>
+var int_sqrt = Module.cwrap('int_sqrt', 'number', ['number'])
+
+function pressBtn(){
+    console.log("The result of int_sqrt(25) is:", int_sqrt(25));
+}
+</script>
+
+<button onclick="pressBtn()">Click me!</button>
+<p>Open the console to see the result!</p>
